@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test 2 Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      main {
+        padding: 2rem;
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Test 2 Page</h1>
+    </header>
+    <main>
+      <p>
+        Welcome to Test 2 Page. Click below to navigate back to Test 1 Page.
+      </p>
+      <button onclick="location.href='test1.html'">Go to Test 1 Page</button>
+    </main>
+  </body>
+  <script>
+    (function (w, d, s, u) {
+      w.myTracker =
+        w.myTracker ||
+        function () {
+          (w.myTracker.q = w.myTracker.q || []).push(arguments);
+        };
+      w.myTrackerSettings = { id: "YOUR_TRACKER_ID" };
+      var script = d.createElement(s);
+      script.async = 1;
+      script.src = u + "/tracker.js";
+      d.getElementsByTagName("head")[0].appendChild(script);
+    })(window, document, "script", "http://localhost:3000/tracker");
+  </script>
+</html>
